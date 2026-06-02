@@ -1664,3 +1664,105 @@ body.react-mobile .nav.open{
 body.react-mobile .menu-btn{
   display:block !important;
 }
+
+/* =========================
+   MENU MOBILE BARBEARIA FIX
+========================= */
+
+body.react-mobile .header {
+  top: 12px !important;
+  left: 18px !important;
+  right: 18px !important;
+  width: auto !important;
+  padding: 12px 14px !important;
+  border-radius: 22px !important;
+  background: rgba(8, 8, 8, .96) !important;
+  border: 1px solid rgba(201, 163, 90, .18) !important;
+  backdrop-filter: blur(22px) !important;
+  -webkit-backdrop-filter: blur(22px) !important;
+  box-shadow: 0 24px 70px rgba(0,0,0,.55) !important;
+}
+
+body.react-mobile .brand {
+  gap: 10px !important;
+}
+
+body.react-mobile .brand span {
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+}
+
+body.react-mobile .brand-copy strong {
+  font-size: 11px !important;
+}
+
+body.react-mobile .brand-copy small {
+  font-size: 8px !important;
+  letter-spacing: .12em !important;
+}
+
+body.react-mobile .menu-btn {
+  display: grid !important;
+  place-items: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.055) !important;
+  border: 1px solid rgba(255,255,255,.12) !important;
+  z-index: 10001 !important;
+}
+
+body.react-mobile .nav {
+  position: fixed !important;
+  top: 72px !important;
+  left: 18px !important;
+  right: 18px !important;
+  width: auto !important;
+  display: grid !important;
+  gap: 4px !important;
+  padding: 16px !important;
+  border-radius: 22px !important;
+  background: rgba(10, 10, 10, .98) !important;
+  border: 1px solid rgba(201, 163, 90, .18) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  box-shadow: 0 24px 70px rgba(0,0,0,.58) !important;
+  transform: translateY(-16px) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: 10000 !important;
+}
+
+body.react-mobile .nav.open {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
+}
+
+body.react-mobile .nav a {
+  width: 100% !important;
+  min-height: 34px !important;
+  padding: 9px 10px !important;
+  border-radius: 12px !important;
+  font-size: 11px !important;
+  justify-content: flex-start !important;
+  background: transparent !important;
+}
+
+body.react-mobile .nav a.active {
+  color: var(--text) !important;
+}
+
+body.react-mobile .nav a:not(.nav-cta)::after {
+  bottom: 3px !important;
+}
+
+body.react-mobile .nav-cta {
+  margin-top: 8px !important;
+  width: 100% !important;
+  min-height: 40px !important;
+  justify-content: center !important;
+  font-size: 11px !important;
+  border-radius: 999px !important;
+}

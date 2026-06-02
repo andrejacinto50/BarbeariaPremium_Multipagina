@@ -1703,14 +1703,27 @@ body.react-mobile .brand-copy small {
 }
 
 body.react-mobile .menu-btn {
-  display: grid !important;
-  place-items: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
   width: 38px !important;
   height: 38px !important;
+  padding: 0 !important;
+
   border-radius: 14px !important;
   background: rgba(255,255,255,.055) !important;
   border: 1px solid rgba(255,255,255,.12) !important;
-  z-index: 10001 !important;
+}
+
+body.react-mobile .menu-btn svg {
+  width: 20px !important;
+  height: 20px !important;
+
+  display: block !important;
+  margin: 0 !important;
+
+  transform: translateY(-1px) !important;
 }
 
 body.react-mobile .nav {

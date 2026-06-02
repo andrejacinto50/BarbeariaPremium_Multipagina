@@ -1605,3 +1605,62 @@ img {
     font-size: 36px;
   }
 }
+
+/* ==================================
+   MOBILE REAL IOS FIX - Teste
+================================== */
+
+body.react-mobile .hero-content{
+  grid-template-columns:1fr !important;
+  gap:32px !important;
+  padding:115px 0 60px !important;
+}
+
+body.react-mobile .hero-showcase{
+  display:flex !important;
+  flex-direction:column !important;
+  min-height:auto !important;
+}
+
+body.react-mobile .hero-image{
+  height:420px !important;
+  border-radius:28px !important;
+}
+
+body.react-mobile .floating-card{
+  position:relative !important;
+  left:auto !important;
+  right:auto !important;
+  top:auto !important;
+  bottom:auto !important;
+  width:100% !important;
+  margin-top:12px !important;
+}
+
+body.react-mobile .cards,
+body.react-mobile .reviews-row,
+body.react-mobile .reviews-grid,
+body.react-mobile .gallery-grid,
+body.react-mobile .experience-grid,
+body.react-mobile .split,
+body.react-mobile .service-wide,
+body.react-mobile .footer,
+body.react-mobile .post-featured{
+  grid-template-columns:1fr !important;
+}
+
+body.react-mobile .stats{
+  grid-template-columns:1fr !important;
+}
+
+body.react-mobile .nav{
+  display:none;
+}
+
+body.react-mobile .nav.open{
+  display:grid !important;
+}
+
+body.react-mobile .menu-btn{
+  display:block !important;
+}
